@@ -20,7 +20,8 @@ class ActivationRequest(BaseModel):
 
 @app.get("/")
 def home():
-    return {"status": "working", "message": "API запущенно успешно!"}
+    
+return {"status": "working", "message": "API launched successfully!"}
 
 @app.post("/activate")
 async def activate_proxy(request: ActivationRequest):
